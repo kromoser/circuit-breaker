@@ -1,5 +1,12 @@
 /* colors */
 /* fonts */
+/* general settings and styles */
+p {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+
+h1, h2, h3 {
+  font-family: Vollkorn, Georgia, "Adobe Garamond Pro", Garamond, serif; }
+
 /* nav styles */
 ul.navbar-nav {
   margin: 0 auto; }
@@ -21,11 +28,20 @@ div.hero-posts {
   height: 275px; }
   div.hero-posts .primary-feature-post {
     text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8); }
+    div.hero-posts .primary-feature-post h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.06rem; }
+    div.hero-posts .primary-feature-post p {
+      font-size: 1.1rem; }
   div.hero-posts .secondary-feature-posts {
     text-transform: uppercase;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     letter-spacing: 0.25rem; }
     div.hero-posts .secondary-feature-posts h4 {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      margin-bottom: 1.6rem; }
+      div.hero-posts .secondary-feature-posts h4:last-child {
+        margin-bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */

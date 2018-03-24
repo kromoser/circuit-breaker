@@ -4,6 +4,17 @@ $black: #000000;
 
 /* fonts */
 $sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+$serif: Vollkorn, Georgia, 'Adobe Garamond Pro', Garamond, serif;
+
+
+/* general settings and styles */
+p {
+  font-family: $sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: $serif;
+}
 
 /* nav styles */
 ul.navbar-nav {
@@ -27,6 +38,16 @@ div.hero-posts {
 
   .primary-feature-post {
     text-shadow: 2px 1px 5px rgba( $black, 0.8);
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.06rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
   }
 
   .secondary-feature-posts {
@@ -36,6 +57,11 @@ div.hero-posts {
 
       h4 {
         font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
   }
 
