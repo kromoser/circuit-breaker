@@ -1,8 +1,31 @@
+/* colors */
+/* fonts */
 /* nav styles */
 ul.navbar-nav {
   margin: 0 auto; }
   ul.navbar-nav li {
     margin-right: 20px;
     margin-left: 20px; }
+
+/* hero posts blade */
+div.hero-posts {
+  background: -moz-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/supreme-court.jpg) center center;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/supreme-court.jpg) center center;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/supreme-court.jpg) center center;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 );
+  /* IE6-9 */
+  background-size: cover;
+  height: 275px; }
+  div.hero-posts .primary-feature-post {
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8); }
+  div.hero-posts .secondary-feature-posts {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 0.25rem; }
+    div.hero-posts .secondary-feature-posts h4 {
+      font-size: 1.2rem; }
 
 /*# sourceMappingURL=styles.css.map */

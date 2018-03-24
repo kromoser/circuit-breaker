@@ -1,3 +1,10 @@
+/* colors */
+$main-purple: rgb(109,0,95);
+$black: #000000;
+
+/* fonts */
+$sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+
 /* nav styles */
 ul.navbar-nav {
   margin: 0 auto;
@@ -6,4 +13,30 @@ ul.navbar-nav {
     margin-right: 20px;
     margin-left: 20px;
   }
+}
+
+
+/* hero posts blade */
+div.hero-posts {
+  background: -moz-linear-gradient(left, rgba( $main-purple, 0.15) 0%, rgba( $main-purple, 0.95 ) 65%, rgba( $main-purple, 0.95 ) 100%), url(assets/img/supreme-court.jpg) center center; /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba( $main-purple, 0.15) 0%,rgba( $main-purple, 0.95 ) 65%,rgba( $main-purple, 0.95 ) 100%), url(assets/img/supreme-court.jpg) center center; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba( $main-purple, 0.15) 0%,rgba( $main-purple, 0.95 ) 65%,rgba( $main-purple, 0.95 ) 100%), url(assets/img/supreme-court.jpg) center center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 ); /* IE6-9 */
+  background-size: cover;
+  height: 275px;
+
+  .primary-feature-post {
+    text-shadow: 2px 1px 5px rgba( $black, 0.8);
+  }
+
+  .secondary-feature-posts {
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    letter-spacing: 0.25rem;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+  }
+
 }
