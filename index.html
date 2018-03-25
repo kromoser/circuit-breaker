@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DC Circuit Breaker</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i|Vollkorn:400,400i,600,600i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -47,28 +48,91 @@
     </header>
     <!-- END MASTHEAD/NAV -->
 
-    <!-- FEATURED POST/IMG HERO -->
-    <div class="container-fluid hero-posts align-items-center">
+    <section id="primary" class="content-area ">
+		  <main id="main" class="site-main" role="main">
+
+        <!-- FEATURED POST/IMG HERO -->
+        <div class="container-fluid hero-posts align-items-center">
 
 
-            <div class="row align-items-center h-100 text-white">
+                <div class="row align-items-center h-100 text-white">
 
-              <div class="col col-md-6 offset-md-2 col-sm-12 primary-feature-post">
-                <h2>Title of the Featured Post Goes Here</h2>
-                <p>Featured post excerpt lorem ipsum sit dolor amet.</p>
-              </div>
+                  <div class="col col-md-7 offset-md-1 col-sm-12 primary-feature-post">
+                    <h2>Title of the Featured Post Goes Here</h2>
+                    <p>Featured post excerpt lorem ipsum sit dolor amet.</p>
+                  </div>
 
-              <div class="col col-md-4 col-sm-12 secondary-feature-posts">
-                <h4>Second featured post title</h4>
-                <h4>Third featured post title</h4>
-                <h4>Fourth featured post title</h4>
-              </div>
+                  <div class="col col-md-4 col-sm-12 secondary-feature-posts">
+                    <h4>Second featured post title</h4>
+                    <h4>Third featured post title</h4>
+                    <h4>Fourth featured post title</h4>
+                  </div>
+
+                </div>
+
+
+        </div>
+        <!-- END POST/IMG HERO -->
+        <!-- START MAIN CONTENT -->
+        <div class="container">
+          <div class="row">
+
+            <!-- left column / latest posts -->
+            <div class="col col-sm-12 col-md-6">
+
+                <!-- article block -->
+                <article>
+                  <header class="entry-header">
+                    <h3 class="entry-title">Title of an Article Post</h3>
+                  </header>
+                  <div class="entry-content">
+                    This is an excerpt or beginning of the post.
+                  </div>
+                </article>
+
+            </div>
+            <!-- middle column / cases -->
+            <div class="col col-sm-6 col-md-3">
+
+                <!-- case list -->
+                <ul class="case-list">
+                  <a href="#"><li>Pence v. Reince</li></a>
+                  <a href="#"><li>Pence v. Reince</li></a>
+                  <a href="#"><li>Pence v. Reince</li></a>
+                </ul>
+
+            </div>
+            <!-- right column / sidebar -->
+            <div class="col col-sm-6 col-md-3">
+
+                <!-- e-mail signup -->
+                <form action="#" method="POST">
+                  <label for="first_name">First name:</label>
+                  <input type="text" name="first_name" autocomplete="name">
+
+                  <label for="last_name">Last name:</label>
+                  <input type="text" name="last_name" autocomplete="family-name">
+
+                  <label for="e-mail">E-mail address:</label>
+                  <input type="email" name="e-mail" autocomplete="email">
+
+                  <input type="submit" val="Sign up!">
+                </form>
 
             </div>
 
+          </div> <!-- end row -->
+        </div>
+        <!-- END MAIN CONTENT -->
+      </main>
+    </section>
+    <!-- END CONTENT -->
 
-    </div>
-    <!--END POST/IMG HERO -->
+    <!-- START FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- END FOOTER -->
 
   </body>
 </html>

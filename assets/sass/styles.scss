@@ -35,6 +35,7 @@ div.hero-posts {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 ); /* IE6-9 */
   background-size: cover;
   height: 275px;
+  margin-bottom: 3rem;
 
   .primary-feature-post {
     text-shadow: 2px 1px 5px rgba( $black, 0.8);
@@ -65,4 +66,4 @@ div.hero-posts {
       }
   }
 
-}
+} /* end hero posts blade */

@@ -25,7 +25,8 @@ div.hero-posts {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 );
   /* IE6-9 */
   background-size: cover;
-  height: 275px; }
+  height: 275px;
+  margin-bottom: 3rem; }
   div.hero-posts .primary-feature-post {
     text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8); }
     div.hero-posts .primary-feature-post h2 {
@@ -43,5 +44,7 @@ div.hero-posts {
       margin-bottom: 1.6rem; }
       div.hero-posts .secondary-feature-posts h4:last-child {
         margin-bottom: 0; }
+
+/* end hero posts blade */
 
 /*# sourceMappingURL=styles.css.map */
