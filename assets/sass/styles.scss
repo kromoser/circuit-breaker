@@ -1,6 +1,10 @@
 /* colors */
 $main-purple: rgb(109,0,95);
 $black: #000000;
+$link-color: lighten( $main-purple, 5% );
+$white: #ffffff;
+$gold-highlight: #f29f10;
+$light-gray: #f3f3f3;
 
 /* fonts */
 $sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -29,9 +33,9 @@ ul.navbar-nav {
 
 /* hero posts blade */
 div.hero-posts {
-  background: -moz-linear-gradient(left, rgba( $main-purple, 0.15) 0%, rgba( $main-purple, 0.95 ) 65%, rgba( $main-purple, 0.95 ) 100%), url(assets/img/supreme-court.jpg) center center; /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba( $main-purple, 0.15) 0%,rgba( $main-purple, 0.95 ) 65%,rgba( $main-purple, 0.95 ) 100%), url(assets/img/supreme-court.jpg) center center; /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba( $main-purple, 0.15) 0%,rgba( $main-purple, 0.95 ) 65%,rgba( $main-purple, 0.95 ) 100%), url(assets/img/supreme-court.jpg) center center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(left, rgba( $main-purple, 0.15) 0%, rgba( $main-purple, 0.95 ) 65%, rgba( $main-purple, 0.95 ) 100%), url(assets/img/detained-fence.jpg) center center; /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba( $main-purple, 0.15) 0%,rgba( $main-purple, 0.95 ) 65%,rgba( $main-purple, 0.95 ) 100%), url(assets/img/detained-fence.jpg) center center; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba( $main-purple, 0.15) 0%,rgba( $main-purple, 0.95 ) 65%,rgba( $main-purple, 0.95 ) 100%), url(assets/img/detained-fence.jpg) center center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 ); /* IE6-9 */
   background-size: cover;
   height: 275px;
@@ -57,7 +61,8 @@ div.hero-posts {
     letter-spacing: 0.25rem;
 
       h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: right;
         margin-bottom: 1.6rem;
 
         &:last-child {
@@ -67,3 +72,51 @@ div.hero-posts {
   }
 
 } /* end hero posts blade */
+
+
+/* case list */
+ul.case-list {
+  list-style: none;
+  padding: 0;
+
+  a {
+
+    color: $link-color;
+    font-family: $sans-serif;
+
+    &:hover {
+      text-decoration: none;
+      color: darken( $main-purple, 15% );
+    }
+
+    li {
+    padding: .5rem .25rem;
+    background: none;
+
+      &:hover {
+        background: $light-gray;
+      }
+    }
+
+
+    li.opinion-issued:before {
+      content: "Opinion";
+      text-transform: uppercase;
+      color: $white;
+      font-weight: bold;
+      background: $gold-highlight;
+      letter-spacing: 0.15rem;
+      font-size: 0.6rem;
+      border-radius: 3px;
+      padding: 3px 3px 3px 6px;
+      text-align: center;
+      position: relative;
+      top: -3px;
+      margin-right: 6px;
+    }
+
+
+  }
+
+
+}

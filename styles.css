@@ -16,11 +16,11 @@ ul.navbar-nav {
 
 /* hero posts blade */
 div.hero-posts {
-  background: -moz-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/supreme-court.jpg) center center;
+  background: -moz-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/supreme-court.jpg) center center;
+  background: -webkit-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/supreme-court.jpg) center center;
+  background: linear-gradient(to right, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 );
   /* IE6-9 */
@@ -40,11 +40,41 @@ div.hero-posts {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     letter-spacing: 0.25rem; }
     div.hero-posts .secondary-feature-posts h4 {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      text-align: right;
       margin-bottom: 1.6rem; }
       div.hero-posts .secondary-feature-posts h4:last-child {
         margin-bottom: 0; }
 
 /* end hero posts blade */
+/* case list */
+ul.case-list {
+  list-style: none;
+  padding: 0; }
+  ul.case-list a {
+    color: #870075;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+    ul.case-list a:hover {
+      text-decoration: none;
+      color: #21001c; }
+    ul.case-list a li {
+      padding: .5rem .25rem;
+      background: none; }
+      ul.case-list a li:hover {
+        background: #f3f3f3; }
+    ul.case-list a li.opinion-issued:before {
+      content: "Opinion";
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: bold;
+      background: #f29f10;
+      letter-spacing: 0.15rem;
+      font-size: 0.6rem;
+      border-radius: 3px;
+      padding: 3px 3px 3px 6px;
+      text-align: center;
+      position: relative;
+      top: -3px;
+      margin-right: 6px; }
 
 /*# sourceMappingURL=styles.css.map */
