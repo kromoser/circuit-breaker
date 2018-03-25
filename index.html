@@ -2,16 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DC Circuit Breaker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </head>
+
   <body>
     <!-- START MASTHEAD/NAV -->
     <header id="masthead" class="site-header navbar-static-top" role="banner">
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-brand">
           Circuit Breaker
         </div>
@@ -19,18 +26,20 @@
         <nav class="navbar navbar-expand-lg" role="navigation">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="material-icons">menu</i>
             </button>
 
-            <ul id="menu-navigation" class="navbar-nav">
-                <li class="nav-item menu-item active"><a title="nav" href="#" class="nav-link">News</a></li>
-                <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">Cases</a></li>
-                <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">Videos</a></li>
-                <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">Calendar</a></li>
-                <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">SCOTUS Tracker</a></li>
-                <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">The Court</a></li>
-                <li class="nav-item menu-item active"><a title="nav" href="#" class="nav-link">About</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul id="menu-navigation" class="navbar-nav">
+                  <li class="nav-item menu-item active"><a title="nav" href="#" class="nav-link">News</a></li>
+                  <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">Cases</a></li>
+                  <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">Videos</a></li>
+                  <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">Calendar</a></li>
+                  <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">SCOTUS Tracker</a></li>
+                  <li class="nav-item menu-item"><a title="nav" href="#" class="nav-link">The Court</a></li>
+                  <li class="nav-item menu-item active"><a title="nav" href="#" class="nav-link">About</a></li>
+              </ul>
+            </div>
 
         </nav>
       </div>
@@ -45,7 +54,7 @@
             <div class="row align-items-center h-100 text-white">
 
               <div class="col col-md-6 offset-md-2 col-sm-12 primary-feature-post">
-                <h2>Featured Post title</h2>
+                <h2>Title of the Featured Post Goes Here</h2>
                 <p>Featured post excerpt lorem ipsum sit dolor amet.</p>
               </div>
 
