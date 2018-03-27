@@ -7,26 +7,80 @@ p {
 h1, h2, h3 {
   font-family: Vollkorn, Georgia, "Adobe Garamond Pro", Garamond, serif; }
 
+.col-border-left {
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #dedede; }
+  @media screen and (max-width: 767px) {
+    .col-border-left {
+      border-left: 0px; } }
+
+.col-border-right {
+  border-top: none;
+  border-bottom: none;
+  border-right: 1px solid #dedede; }
+  @media screen and (max-width: 1200px) {
+    .col-border-right {
+      border-right: 0px; } }
+
+/* logo and branding */
+.branding-logo {
+  width: 100%;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 1; }
+
+/* block subheads */
+.block-title {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #6b6b6b;
+  margin: 0 0 1.5rem 0; }
+
 /* nav styles */
-ul.navbar-nav {
-  margin: 0 auto; }
-  ul.navbar-nav li {
-    margin-right: 20px;
-    margin-left: 20px; }
+.navbar-expand-lg {
+  padding-bottom: 0;
+  padding-top: 0;
+  border-top: 1px solid #dedede; }
+  .navbar-expand-lg ul.navbar-nav {
+    margin: 0 auto;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+    .navbar-expand-lg ul.navbar-nav li {
+      font-size: .85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem; }
+      .navbar-expand-lg ul.navbar-nav li a.nav-link {
+        color: #6b6b6b;
+        padding: 1rem 1.5rem; }
+        .navbar-expand-lg ul.navbar-nav li a.nav-link:hover {
+          background: #dedede; }
 
 /* hero posts blade */
 div.hero-posts {
-  background: -moz-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
+  background: -moz-linear-gradient(left, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
+  background: -webkit-linear-gradient(left, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(109, 0, 95, 0.15) 0%, rgba(109, 0, 95, 0.95) 65%, rgba(109, 0, 95, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
+  background: linear-gradient(to right, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006d005f', endColorstr='#6d005f',GradientType=0 );
   /* IE6-9 */
   background-size: cover;
   height: 275px;
   margin-bottom: 3rem; }
+  @media screen and (max-width: 991px) {
+    div.hero-posts {
+      height: 350px;
+      text-align: center;
+      background: -moz-linear-gradient(top, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ } }
   div.hero-posts .primary-feature-post {
     text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8); }
     div.hero-posts .primary-feature-post h2 {
@@ -45,12 +99,16 @@ div.hero-posts {
       margin-bottom: 1.6rem; }
       div.hero-posts .secondary-feature-posts h4:last-child {
         margin-bottom: 0; }
+      @media screen and (max-width: 991px) {
+        div.hero-posts .secondary-feature-posts h4 {
+          text-align: center; } }
 
 /* end hero posts blade */
 /* case list */
 ul.case-list {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 2rem; }
   ul.case-list a {
     color: #870075;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
@@ -76,5 +134,75 @@ ul.case-list {
       position: relative;
       top: -3px;
       margin-right: 6px; }
+    ul.case-list a li.arguments:before {
+      content: "Arguments";
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: bold;
+      background: #278585;
+      letter-spacing: 0.15rem;
+      font-size: 0.6rem;
+      border-radius: 3px;
+      padding: 3px 3px 3px 6px;
+      text-align: center;
+      position: relative;
+      top: -3px;
+      margin-right: 6px; }
+    ul.case-list a li.new-appeal:before {
+      content: "New Appeal";
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: bold;
+      background: #451b5e;
+      letter-spacing: 0.15rem;
+      font-size: 0.6rem;
+      border-radius: 3px;
+      padding: 3px 3px 3px 6px;
+      text-align: center;
+      position: relative;
+      top: -3px;
+      margin-right: 6px; }
+
+/* e-mail sign up form */
+form.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 2rem; }
+  form.email-form .email-form-group {
+    border-bottom: 2px solid #6d005f;
+    margin-bottom: 2rem; }
+    form.email-form .email-form-group input {
+      height: 100%;
+      border: none;
+      font-weight: 300; }
+      form.email-form .email-form-group input:focus {
+        outline: 0;
+        background: #f3f3f3; }
+    form.email-form .email-form-group button {
+      border: 1px solid #6d005f; }
+
+/* recent posts lop */
+article.post {
+  margin: 3rem 0; }
+  article.post:first-of-type {
+    margin-top: 0; }
+  article.post p {
+    color: #6b6b6b; }
+
+/* calendar */
+div.calendar {
+  background: #f3f3f3;
+  height: 235px; }
+
+/* twitter feed */
+div.tweet-block {
+  background: #f3f3f3;
+  height: 450px; }
+
+/* video block */
+div.video-block {
+  background: #f3f3f3;
+  height: 180px; }
 
 /*# sourceMappingURL=styles.css.map */

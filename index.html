@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DC Circuit Breaker</title>
-    <link href="https://fonts.googleapis.com/css?family=OpenSans:400,400i,500,500i,700,700i|Vollkorn:400,400i,600,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=OpenSans:300,300i,400,400i,500,500i,700,700i|Vollkorn:400,400i,600,600i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,8 +20,8 @@
     <header id="masthead" class="site-header navbar-static-top" role="banner">
 
       <div class="container-fluid">
-        <div class="navbar-brand">
-          Circuit Breaker
+        <div class="navbar-brand col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-lg-5 offset-lg-1">
+          <a href="#"><img src="assets/img/circuit-breaker-logo.png" alt="DC Circuit Breaker" class="branding-logo"></a>
         </div>
 
         <nav class="navbar navbar-expand-lg" role="navigation">
@@ -57,12 +57,12 @@
 
                 <div class="row align-items-center h-100 text-white">
 
-                  <div class="col col-md-6 offset-md-1 col-sm-12 primary-feature-post">
+                  <div class="col col-lg-6 offset-lg-1 col-sm-12 primary-feature-post">
                     <h2>Detained Without a Lawyer</h2>
                     <p>Can the government hold an American citizen in Iraq without giving him a lawyer? What to expect at the oral argument in Doe v. Mattis.</p>
                   </div>
 
-                  <div class="col col-md-4 col-sm-12 secondary-feature-posts">
+                  <div class="col col-lg-4 col-sm-12 secondary-feature-posts">
                     <h4>Second featured post title</h4>
                     <h4>Third featured post title</h4>
                     <h4>Fourth featured post title</h4>
@@ -75,49 +75,117 @@
         <!-- END POST/IMG HERO -->
         <!-- START MAIN CONTENT -->
         <div class="container">
+
           <div class="row">
 
             <!-- left column / latest posts -->
             <div class="col col-sm-12 col-md-8 col-lg-8 col-xl-6" >
 
+                <div class="block-title">Latest posts</div>
                 <!-- article block -->
-                <article>
+                <article class="post article-post">
                   <header class="entry-header">
                     <h3 class="entry-title">Title of an Article Post</h3>
                   </header>
                   <div class="entry-content">
-                    This is an excerpt or beginning of the post.
+                    <p>The Recipient must attach a copy of the LPPL specify means to enable you to deprive anyone else from sharing it farther. Redistribution and use.</p>
+                  </div>
+                </article>
+
+                <!-- article block -->
+                <article class="post article-post">
+                  <header class="entry-header">
+                    <h3 class="entry-title">Title of an Article Post</h3>
+                  </header>
+                  <div class="entry-content">
+                    <p>Approximately 25-word excerpt or subhead. Redistribution and use in source code or else can get the rights granted by that Contributor alone.</p>
+                  </div>
+                </article>
+
+                <!-- article block -->
+                <article class="post article-post">
+                  <header class="entry-header">
+                    <h3 class="entry-title">Title of an Article Post</h3>
+                  </header>
+                  <div class="entry-content">
+                    <p>You are not covered by the Current Maintainer (and the export control laws and regulations of Japan. This Agreement</p>
+                  </div>
+                </article>
+
+                <!-- article block -->
+                <article class="post article-post">
+                  <header class="entry-header">
+                    <h3 class="entry-title">Title of an Article Post</h3>
+                  </header>
+                  <div class="entry-content">
+                    <p>You may make and give any other recipients of Licensed Product under the % conditions of this License incorporates the limitation as if written in the Original Code, Modifications, the combination of Modifications made by that particular Contributor.</p>
                   </div>
                 </article>
 
             </div>
             <!-- middle column / cases -->
-            <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-3 col-border-left col-border-right">
+
+
 
                 <!-- case list -->
+                <div class="block-title">Cases we’re watching</div>
+
                 <ul class="case-list">
                   <a href="#"><li class="opinion-issued">Pence v. Reince</li></a>
-                  <a href="#"><li>Pence v. Reince</li></a>
-                  <a href="#"><li>Pence v. Reince</li></a>
+                  <a href="#"><li class="new-appeal">Doe v. Mattis</li></a>
+                  <a href="#"><li>Papadapolous v. Scaramucci</li></a>
+                  <a href="#"><li class="opinion-issued">Pence v. Reince</li></a>
+                  <a href="#"><li>Doe v. Mattis</li></a>
+                  <a href="#"><li>Papadapolous v. Scaramucci</li></a>
+                  <a href="#"><li class="arguments">Pence v. Reince</li></a>
+                  <a href="#"><li>Doe v. Mattis</li></a>
+                  <a href="#"><li>Papadapolous v. Scaramucci</li></a>
                 </ul>
+
+                <div class="block-title">Upcoming cases</div>
+                <div class="calendar">
+
+                </div>
 
             </div>
             <!-- right column / sidebar -->
             <div class="col col-sm-12 col-lg-12 col-xl-3">
 
+
+
                 <!-- e-mail signup -->
-                <form action="#" method="POST" class="col-sm-12 col-md-6 col-lg-4 col-xl-12">
-                  <div class="form-group">
-                    <label for="first_name">First name</label>
-                    <input type="text" id="first_name" class="form-control">
+                <div class="block-title">Sign up for our list</div>
+                <form action="#" method="POST" class="email-form">
+                  <div class="email-form-group w-50">
+                    <input type="text" id="first_name" class="w-100" placeholder="First name">
                   </div>
-                  <div class="form-group">
-                    <label for="last_name">Last name</label>
-                    <input type="text" id="last_name" class="form-control">
+                  <div class="email-form-group w-50">
+                    <input type="text" id="last_name" class="w-100" placeholder="Last name">
                   </div>
-                  <button type="submit" class="bt btn-default">Sign up</button>
+                  <div class="email-form-group w-100">
+                    <input type="email" id="e-mail" class="w-100" placeholder="E-mail address">
+                  </div>
+                  <div class=" w-100">
+                  <button type="submit" class="btn-default">Sign up</button>
+                  </div>
                 </form>
 
+                <!-- Twitter widget -->
+                <div class="block-title">Recent tweets</div>
+                <div class="tweet-block">
+
+                </div>
+
+            </div>
+
+          </div> <!-- end row -->
+
+          <div class="row">
+
+            <div class="col-sm-12">
+              <div class="block-title">Video roundups</div>
+              <div class="video-block"></div>
             </div>
 
           </div> <!-- end row -->
