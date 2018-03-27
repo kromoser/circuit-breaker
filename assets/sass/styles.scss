@@ -85,12 +85,16 @@ h1, h2, h3 {
       text-transform: uppercase;
       letter-spacing: 0.15rem;
 
+      &.dropdown:hover .dropdown-menu {
+        display: block;
+      }
       a.nav-link {
         color: $dark-gray;
         padding: 1rem 1.5rem;
 
         &:hover {
-          background: $medium-gray;
+          background: $main-purple;
+          color: $light-gray;
         }
       }
     }
@@ -115,6 +119,11 @@ div.hero-posts {
     background: -webkit-linear-gradient(top, rgba( darken($main-purple, 10%), 0.15) 0%,rgba( darken($main-purple, 10%), 0.95 ) 65%,rgba( darken($main-purple, 10%), 0.95 ) 100%), url(assets/img/detained-fence.jpg) center center; /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba( darken($main-purple, 10%), 0.15) 0%,rgba( darken($main-purple, 10%), 0.95 ) 65%,rgba( darken($main-purple, 10%), 0.95 ) 100%), url(assets/img/detained-fence.jpg) center center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
+  }
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+    padding: 3rem 1.5rem;
   }
 
   .primary-feature-post {
@@ -160,10 +169,20 @@ ul.case-list {
   padding: 0;
   margin-bottom: 2rem;
 
+  @media screen and (max-width: 767px) {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+
   a {
 
     color: $link-color;
     font-family: $sans-serif;
+    display: inline-block;
 
     &:hover {
       text-decoration: none;
@@ -278,18 +297,31 @@ article.post {
 
 /* calendar */
 div.calendar {
-  background: $light-gray;
+  background: lighten($medium-gray, 5%);
   height: 235px;
+  margin-bottom: 1.5rem;
 }
 
 /* twitter feed */
 div.tweet-block {
-  background: $light-gray;
+  background: lighten($medium-gray, 5%);
   height: 450px;
+  margin-bottom: 1.5rem;
 }
 
 /* video block */
 div.video-block {
-  background: $light-gray;
+  background: lighten($medium-gray, 5%);
   height: 180px;
+  margin-bottom: 1.5rem;
+}
+
+/* footer */
+footer {
+  background: darken($main-purple, 15%);
+  color: $light-gray;
+  padding: 3rem;
+  margin: 3rem 0 0;
+  font-family: $sans-serif;
+  font-weight: 300;
 }

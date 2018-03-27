@@ -52,11 +52,14 @@ h1, h2, h3 {
       font-size: .85rem;
       text-transform: uppercase;
       letter-spacing: 0.15rem; }
+      .navbar-expand-lg ul.navbar-nav li.dropdown:hover .dropdown-menu {
+        display: block; }
       .navbar-expand-lg ul.navbar-nav li a.nav-link {
         color: #6b6b6b;
         padding: 1rem 1.5rem; }
         .navbar-expand-lg ul.navbar-nav li a.nav-link:hover {
-          background: #dedede; }
+          background: #6d005f;
+          color: #f3f3f3; }
 
 /* hero posts blade */
 div.hero-posts {
@@ -81,6 +84,10 @@ div.hero-posts {
       /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to bottom, rgba(58, 0, 51, 0.15) 0%, rgba(58, 0, 51, 0.95) 65%, rgba(58, 0, 51, 0.95) 100%), url(assets/img/detained-fence.jpg) center center;
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ } }
+  @media screen and (max-width: 767px) {
+    div.hero-posts {
+      height: auto;
+      padding: 3rem 1.5rem; } }
   div.hero-posts .primary-feature-post {
     text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8); }
     div.hero-posts .primary-feature-post h2 {
@@ -109,9 +116,18 @@ ul.case-list {
   list-style: none;
   padding: 0;
   margin-bottom: 2rem; }
+  @media screen and (max-width: 767px) {
+    ul.case-list {
+      -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
+      column-gap: 20px;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2; } }
   ul.case-list a {
     color: #870075;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    display: inline-block; }
     ul.case-list a:hover {
       text-decoration: none;
       color: #21001c; }
@@ -192,17 +208,29 @@ article.post {
 
 /* calendar */
 div.calendar {
-  background: #f3f3f3;
-  height: 235px; }
+  background: #ebebeb;
+  height: 235px;
+  margin-bottom: 1.5rem; }
 
 /* twitter feed */
 div.tweet-block {
-  background: #f3f3f3;
-  height: 450px; }
+  background: #ebebeb;
+  height: 450px;
+  margin-bottom: 1.5rem; }
 
 /* video block */
 div.video-block {
-  background: #f3f3f3;
-  height: 180px; }
+  background: #ebebeb;
+  height: 180px;
+  margin-bottom: 1.5rem; }
+
+/* footer */
+footer {
+  background: #21001c;
+  color: #f3f3f3;
+  padding: 3rem;
+  margin: 3rem 0 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300; }
 
 /*# sourceMappingURL=styles.css.map */
