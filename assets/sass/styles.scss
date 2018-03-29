@@ -6,6 +6,7 @@ $white: #ffffff;
 $gold-highlight: #f29f10;
 $accent-turquoise: #278585;
 $blue-plum: #451b5e;
+$white: #ffffff;
 $light-gray: #f3f3f3;
 $medium-gray: #dedede;
 $dark-gray: #6b6b6b;
@@ -154,6 +155,16 @@ div.hero-posts {
           margin-bottom: 0;
         }
 
+        a {
+          color: $white;
+
+          &:hover {
+            color: $light-gray;
+            text-decoration: none;
+            border-bottom: 2px solid $light-gray;
+          }
+        }
+
         @media screen and (max-width: 991px) {
           text-align: center;
         }
@@ -183,6 +194,7 @@ ul.case-list {
     color: $link-color;
     font-family: $sans-serif;
     display: inline-block;
+    width: 100%;
 
     &:hover {
       text-decoration: none;
@@ -256,6 +268,14 @@ form.email-form {
   font-family: $sans-serif;
   margin-bottom: 2rem;
 
+  button {
+    background: $main-purple;
+    border: none;
+    color: $white;
+    padding: 4px 0;
+    border-radius: 3px;
+    cursor: pointer;
+  }
 
   .email-form-group {
 
@@ -267,16 +287,16 @@ form.email-form {
       height: 100%;
       border: none;
       font-weight: 300;
-
+      cursor: pointer;
+      padding-left: 6px;
       &:focus {
         outline: 0;
         background: $light-gray;
+        cursor: auto;
       }
     }
 
-    button {
-      border: 1px solid $main-purple;
-    }
+
 
 
   }
@@ -298,14 +318,25 @@ article.post {
 /* calendar */
 div.calendar {
   background: lighten($medium-gray, 5%);
-  height: 235px;
+  height: 435px;
   margin-bottom: 1.5rem;
 }
 
 /* twitter feed */
 div.tweet-block {
   background: lighten($medium-gray, 5%);
-  height: 450px;
+  height: 455px;
+  margin-bottom: 1.5rem;
+
+  a.twitter-timeline {
+    max-height: 455px;
+  }
+}
+
+/* search block */
+div.search-block {
+  background: lighten($medium-gray, 5%);
+  height: 110px;
   margin-bottom: 1.5rem;
 }
 
@@ -315,6 +346,7 @@ div.video-block {
   height: 180px;
   margin-bottom: 1.5rem;
 }
+
 
 /* footer */
 footer {
